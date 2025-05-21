@@ -22,18 +22,15 @@
         section {
             background-color: white;
             border-radius: 10px;
-            margin-bottom: 20px;
             padding: 1em;
         }
         section img {
             width: 150px;
-            float: left; /* Para que el resto vaya a su derecha */
-            margin-right: 1em;
+            /* Estas dos para centrar horizontalmente la imagen */
+            display: block;
+            margin: auto;
         }
-        section h2, section p {
-            margin-left: calc(150px + 1em); /* Truquillo para que el texto, cuando la página se
-                             empequeñece, no se vaya debajo de la imagen*/
-        }
+      
         section h2 {
             color:rgb(16, 107, 199);
             margin-left: 0; /* Ya que el h2 quedaba un poquito más para adentro con
@@ -61,7 +58,19 @@
                 transform: scale(1.1);
             }
         }*/
-
+        main {
+            display: flex;
+            flex-direction: row-reverse;
+            column-gap: 20px;
+            row-gap: 20px; /* Podemos poner gap: 20px para row y column a la vez */
+            flex-wrap: wrap; /* Para que las cajas que no quepan
+                    en la misma fila, las baje a la siguiente */
+        }
+        main section {
+            /* Estas dos para que todas tengan el mismo ancho */
+            flex-basis: 0;
+            flex-grow: 1;
+        }
     </style>
 </head>
 
