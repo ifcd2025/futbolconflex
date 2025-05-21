@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipos de fútbol</title>
+    <style>
+        body {
+            background: linear-gradient(360deg,rgba(10, 94, 130, 1) 0%, rgba(9, 197, 235, 1) 100%);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header { /* h1*/ /* header h1 */
+            font-size: 3rem;
+            color: white;
+            text-align: center;
+        }
+        header span {
+            color:black;
+            text-shadow: 2px 2px 1px white;
+        }
+        section {
+            background-color: white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 1em;
+        }
+        section img {
+            width: 150px;
+            float: left; /* Para que el resto vaya a su derecha */
+            margin-right: 1em;
+        }
+        section h2, section p {
+            margin-left: calc(150px + 1em); /* Truquillo para que el texto, cuando la página se
+                             empequeñece, no se vaya debajo de la imagen*/
+        }
+        section h2 {
+            color:rgb(16, 107, 199);
+            margin-left: 0; /* Ya que el h2 quedaba un poquito más para adentro con
+                            respecto a los párrafos */
+        }
+        section:hover h2 {
+            color:rgb(194, 30, 30);
+        }
+        section:hover img {
+            /* Con transition indicamos que esté atentos a cambios en la
+            propiead transform para que la anime el tiempo indicado */
+            transition: transform .5s;
+            transform: scale(1.1);
+        }
+        section:hover {
+            transform: rotate(2sdeg);
+            transition: transform 1s
+        }
+        /* Hoy día podemos anadir estilos
+        section:hover {
+            h2 {
+                 color:rgb(194, 30, 30);
+            }
+            img {
+                transform: scale(1.1);
+            }
+        }*/
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>⚽<span>E</span>quipos de <span>F</span>útbol <span>D</span>estacados⚽</h1>
+    </header>
+    <main>
+        <section>
+            <img src="imagenes/barsa.png" alt="escudo barcelona">
+            <h2>FC Barcelona</h2>
+            <p><b>Estadio:</b> Spotify Camp Nou</p>
+            <p><b>Año de fundación:</b> 1899</p>
+            <p>El FC Barcelona es uno de los clubes más importantes de España y del mundo, conocido por su estilo de
+                juego ofensivo y por haber contado con jugadores legendarios como Lionel Messi, Xavi e Iniesta.</p>
+        </section>
+        <section>
+            <img src="imagenes/madrid.png" alt="escudo real madrid">
+            <h2>Real Madrid CF</h2>
+            <p><b>Estadio:</b> Santiago Bernabéu</p>
+            <p><b>Año de fundación:</b> 1902</p>
+            <p>Real Madrid ha ganado más Copas de Europa que ningún otro equipo. Es un símbolo de grandeza en el fútbol
+                europeo, destacando por su mentalidad ganadora y su plantilla de estrellas.</p>
+        </section>
+        <section>
+            <img src="imagenes/manchester.png" alt="escudo manchester united">
+            <h2>Manchester United</h2>
+            <p><b>Estadio:</b> Old Trafford</p>
+            <p><b>Año de fundación:</b> 1878</p>
+            <p>Club inglés con gran tradición, múltiples títulos de liga y Champions. Durante años fue dirigido por Sir
+                Alex
+                Ferguson, quien lo llevó a su época más exitosa</p>
+        </section>
+        <section>
+            <img src="imagenes/juventus.png" alt="Escudo juventus">
+            <h2>Juventus FC</h2>
+            <p><b>Estadio:</b> Allianz Stadium</p>
+            <p><b>Año de fundación:</b> 1897</p>
+            <p>La Juventus es el club más laureado de Italia. Reconocido por su disciplina táctica y por contar con
+                figuras
+                históricas como Del Piero, Buffon y Cristiano Ronaldo.</p>
+        </section>
+        <section>
+            <img src="imagenes/bayern.png" alt="Escudo Bayern Munich">
+            <h2>Bayern Múnich</h2>
+            <p><b>Estadio:</b> Allianz Arena</p>
+            <p><b>Año de fundación:</b> 1900</p>
+            <p>El equipo más exitoso de Alemania, con múltiples títulos de Bundesliga y Champions League. Conocido por
+                su
+                potencia ofensiva y eficiencia táctica</p>
+        </section>
+    </main>
+</body>
+</html>
